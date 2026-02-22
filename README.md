@@ -49,6 +49,7 @@ void push(int value) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
 
     if (newNode == NULL) {
+        
         printf("Stack Overflow! Memory not available\n");
         return;
     }
@@ -64,6 +65,7 @@ void push(int value) {
 
 void pop() {
     if (top == NULL) {
+       
         printf("Stack Underflow! Stack is empty\n");
         return;
     }
@@ -78,6 +80,7 @@ void pop() {
 
 void display() {
     if (top == NULL) {
+        
         printf("Stack is empty\n");
         return;
     }
